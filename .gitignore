@@ -2,12 +2,10 @@
 .gradle
 .settings
 .classpath
-.gitattributes
+.gittattribute
 .project
 
 # Ignore Gradle build output directory
 build
 bin
-gradlew
-gradlew.bat
-settings.gradle
+
