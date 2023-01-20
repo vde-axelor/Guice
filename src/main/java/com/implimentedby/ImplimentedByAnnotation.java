@@ -12,7 +12,7 @@ public class ImplimentedByAnnotation {
 	public static void main(String[] args) {
 		 Injector injector = Guice.createInjector(new UserModule());
 	     User user = injector.getInstance(User.class);
-	     user.makeSpellCheck();
+	     user.displayName();
 	}
 
 }
@@ -24,12 +24,12 @@ class User {
 	      this.name = name;
 	   }
 
-	   public void makeSpellCheck(){
+	   public void displayName(){
 	      name.show();
 	   } 
 	}
 
-	//Binding Module
+
 	class UserModule extends AbstractModule {
 
 	   @Override
@@ -45,7 +45,7 @@ class User {
 	   public void show();
 	}
 
-	//spell checker implementation
+
 	class ShowName implements Data {
 
 	   @Inject @Named("NAME")
@@ -55,7 +55,7 @@ class User {
 
 	   @Override
 	   public void show() { 
-	      System.out.println("Inside checkSpelling." );
+	      System.out.println("Inside Name." );
 	      System.out.println(name); 
 	   }
 	}

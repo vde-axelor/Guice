@@ -40,9 +40,7 @@ class TextEditor {
 	   @Override
 	   protected void configure() {
 	      bind(SpellChecker.class).to(SpellCheckerImpl.class);
-	      bindInterceptor(Matchers.any(), 
-	         Matchers.annotatedWith(CallTracker.class), 
-	         new CallTrackerService());
+	      bindInterceptor(Matchers.any(),Matchers.annotatedWith(CallTracker.class),new CallTrackerService());
 	   } 
 	}
 
