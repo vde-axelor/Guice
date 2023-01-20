@@ -31,7 +31,7 @@ class Display {
 	   } 
 	}
 
-	//Binding Module
+
 	class NameModule extends AbstractModule {
 
 	   @Override
@@ -44,7 +44,7 @@ class Display {
 	   public void checkName();
 	}
 
-	//spell checker implementation
+
 	class NameData implements Name {
 
 	   public NameData(){}
