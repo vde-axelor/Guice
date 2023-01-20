@@ -26,7 +26,6 @@ class TextEditor {
 	   } 
 	}
 
-	//Binding Module
 	class TextEditorModule extends AbstractModule {
 
 	   @Override
@@ -43,12 +42,12 @@ class TextEditor {
 	   } 
 	}
 
-	//spell checker interface
+
 	interface SpellChecker {
 	   public void checkSpelling();
 	}
 
-	//spell checker implementation
+
 	class SpellCheckerImpl implements SpellChecker {
 
 	   private String dbUrl;

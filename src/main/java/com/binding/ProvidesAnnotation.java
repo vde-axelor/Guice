@@ -24,7 +24,7 @@ class TextEditor {
 	   } 
 	}
 
-	//Binding Module
+
 	class TextEditorModule extends AbstractModule {
 
 	   @Override
@@ -41,7 +41,7 @@ class TextEditor {
 	   }
 	}
 
-	//Name interface
+
 	interface Name {
 	public void ShowName();
 	}

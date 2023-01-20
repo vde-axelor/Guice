@@ -27,7 +27,7 @@ class TextEditor {
 	   } 
 	}
 
-	//Binding Module
+
 	class TextEditorModule extends AbstractModule {
 
 	   @Override

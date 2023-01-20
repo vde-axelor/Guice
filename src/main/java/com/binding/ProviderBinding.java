@@ -25,7 +25,7 @@ class TextEditor1 {
 	   } 
 	}
 
-	//Binding Module
+
 	class TextEditorModule1 extends AbstractModule {
 
 	   @Override
@@ -35,12 +35,12 @@ class TextEditor1 {
 	   } 
 	}
 
-	//spell checker interface
+
 	interface SpellChecker {
 	   public void checkSpelling();
 	}
 
-	//spell checker implementation
+
 	class SpellCheckerImpl implements SpellChecker {
 
 	   private String name;
